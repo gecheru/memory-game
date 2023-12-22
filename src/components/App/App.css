@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0083FC;
+  --secondary-color: #F53;
+  --tertiary-color: #E5E5E5;
+  --bg-color: #FFF;
+  --card-text-color: #E6E6E6;
+
+  --container-width: 965px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  font-family: Formular, sans-serif;
+}
+
+.app {
+  padding: 165px 20px;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 193px auto 193px;
+  grid-template-rows: 130px auto;
+  gap: 15px;
+}
+
+.head {
+  grid-column: 1 / 4;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: 700;
+}
