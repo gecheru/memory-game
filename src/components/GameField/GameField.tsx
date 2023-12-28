@@ -12,7 +12,7 @@ interface Props {
 
 export const GameField: FC<Props> = ({ openCard, getCardState, cards }) => {
   return (
-    <div className="game-field">
+    <div className='game-field'>
       {cards.map((card) => (
         <Card
           cardMeta={card}

@@ -89,16 +89,16 @@ export const App: FC = () => {
 
   return (
     <>
-      <div className="app">
-        <div className="container">
-          <h1 className="head title">Memory</h1>
-          <Statistic title="moves made" count={attempts} />
+      <div className='app'>
+        <div className='container'>
+          <h1 className='head title'>Memory</h1>
+          <Statistic title='moves made' count={attempts} />
           <GameField
             openCard={addOpened}
             cards={cards}
             getCardState={getCardState}
           />
-          <Statistic title="moves left" count={requiredAttempts - attempts} />
+          <Statistic title='moves left' count={requiredAttempts - attempts} />
         </div>
       </div>
       {isModalOpen && (

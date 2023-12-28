@@ -10,8 +10,8 @@ interface Props {
 
 export const ResultModal: FC<Props> = ({ isWin, attempts, clickHandler }) => {
   return (
-    <div className="result-modal">
-      <div className="result-modal__head">
+    <div className='result-modal'>
+      <div className='result-modal__head'>
         {isWin ? (
           <>
             <div>You win!</div>

@@ -26,7 +26,7 @@ export const Card: FC<Props> = ({ cardMeta, openHandler, state }) => {
 
   return (
     <button
-      type="button"
+      type='button'
       className={`card card--${state}`}
       onClick={handleClick}
     >
