@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0083FC;
+  --secondary-color: #FF5533;
+  --tertiary-color: #E5E5E5;
+  --bg-color: #FFF;
+  --card-text-color: #E6E6E6;
+  --white-color: #FFF;
+  --card-size: 114px;
+  --container-width: 965px;
+}

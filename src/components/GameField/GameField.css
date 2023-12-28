@@ -1,0 +1,7 @@
+.game-field {
+  display: grid;
+  grid-template-columns: repeat(4, var(--card-size));
+  grid-auto-rows: var(--card-size);
+  justify-content: center;
+  gap: 13px;
+}

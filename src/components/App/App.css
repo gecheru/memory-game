@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  font-family: Formular, sans-serif;
+}
+
+.app {
+  padding: clamp(40px, 11.5vw, 165px) 20px;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 193px auto 193px;
+  grid-template-rows: 130px auto;
+  gap: 15px;
+}
+
+.head {
+  grid-column: 1 / 4;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 50px;
+  font-weight: 700;
+}

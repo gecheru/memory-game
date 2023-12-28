@@ -1,0 +1,19 @@
+.statistic {
+  text-align: center;
+}
+
+.statistic__text {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.statistic__title {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.statistic__count {
+  color: var(--secondary-color);
+}
