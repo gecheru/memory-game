@@ -18,5 +18,5 @@ export const generateCards: (pairs: number) => CardType[] = (pairs) => {
     name: card,
     id: index,
     img: images[card],
-  }));
+  })) as CardType[];
 };

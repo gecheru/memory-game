@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 const excludeFolders = ['/node_modules/'];
 
@@ -40,6 +42,12 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [{ from: './src/robots.txt', to: 'robots.txt' }],
+    }),
+    new ESLintPlugin({
+      files: '{**/*,*}.{tsx,ts,js}',
+    }),
+    new StylelintPlugin({
+      files: '**/*.css',
     }),
   ],
   devServer: {
