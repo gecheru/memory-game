@@ -12,16 +12,15 @@ interface Props {
 
 export const GameField: FC<Props> = ({ openCard, getCardState, cards }) => {
   return (
-    <div className='game-field'>
-      {
-        cards.map((card) => (
-          <Card 
-            cardMeta={card}
-            openHandler={openCard}
-            state={getCardState(card)}
-            key={card.id} />
-          ))
-      }
+    <div className="game-field">
+      {cards.map((card) => (
+        <Card
+          cardMeta={card}
+          openHandler={openCard}
+          state={getCardState(card)}
+          key={card.id}
+        />
+      ))}
     </div>
-  )
-}
+  );
+};

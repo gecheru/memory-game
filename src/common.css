@@ -3,12 +3,12 @@
 }
 
 :root {
-  --primary-color: #0083FC;
-  --secondary-color: #FF5533;
-  --tertiary-color: #E5E5E5;
-  --bg-color: #FFF;
-  --card-text-color: #E6E6E6;
-  --white-color: #FFF;
+  --primary-color: #0083fc;
+  --secondary-color: #ff5533;
+  --tertiary-color: #e5e5e5;
+  --bg-color: #fff;
+  --card-text-color: #e6e6e6;
+  --white-color: #fff;
   --card-size: 114px;
   --container-width: 965px;
 }

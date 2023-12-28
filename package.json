@@ -7,7 +7,7 @@
     "dev": "NODE_ENV=development webpack serve",
     "build": "webpack",
     "eslint": "eslint ./",
-    "prettier": "prettier ./ --check"
+    "prettier": "prettier ./ --write"
   },
   "author": "",
   "license": "ISC",

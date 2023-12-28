@@ -1,8 +1,8 @@
 const path = require('path');
-const HtmlWebpackPlugin =  require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
-const excludeFolders = ['/node_modules/']
+const excludeFolders = ['/node_modules/'];
 
 module.exports = {
   mode: process.env.NODE_ENV || 'production',
@@ -10,44 +10,42 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[contenthash].js',
-    clean: true
+    clean: true,
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         use: 'babel-loader',
-        exclude: excludeFolders
+        exclude: excludeFolders,
       },
       {
         test: /\.(ts|tsx)$/,
         use: 'ts-loader',
-        exclude: excludeFolders
+        exclude: excludeFolders,
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.svg$/,
-        type: 'asset/resource'
-      }
-    ]
+        type: 'asset/resource',
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     }),
     new CopyPlugin({
-      patterns: [
-        { from: './src/robots.txt', to: 'robots.txt' } 
-      ]
-    })
+      patterns: [{ from: './src/robots.txt', to: 'robots.txt' }],
+    }),
   ],
   devServer: {
-    open: true
+    open: true,
   },
   resolve: {
-    extensions: ['.js', '.ts', '.tsx']
-  }
-}
+    extensions: ['.js', '.ts', '.tsx'],
+  },
+};

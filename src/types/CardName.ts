@@ -1,4 +1,4 @@
-export type CardName = 
+export type CardName =
   | 'nginx'
   | 'node'
   | 'react'

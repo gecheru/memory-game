@@ -1,12 +1,12 @@
-import { CardName } from "../types/CardName";
+import { CardName } from '../types/CardName';
 
 export const cardNames: CardName[] = [
-  'nginx', 
+  'nginx',
   'node',
-  'react', 
-  'firebase', 
-  'webpack', 
-  'webstorm', 
-  'typescript', 
-  'redux'
+  'react',
+  'firebase',
+  'webpack',
+  'webstorm',
+  'typescript',
+  'redux',
 ];

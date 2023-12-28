@@ -15,5 +15,5 @@ export const images = {
   redux,
   typescript,
   webpack,
-  webstorm
-}
+  webstorm,
+};
