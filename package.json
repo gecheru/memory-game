@@ -2,6 +2,7 @@
   "name": "memory-game",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://gecheru.github.io/memory-game",
   "scripts": {
     "dev": "NODE_ENV=development webpack serve",
     "build": "webpack",
